@@ -1,0 +1,119 @@
+.events-list-hero {
+    background:#743a07;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .events-list-label {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .events-list-title {
+    font-size: 2.5rem;
+    color:white;
+    margin-bottom: 1rem;
+  }
+  
+  .events-list-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+    line-height: 1.6;
+    font-size:24px;
+  }
+  
+  .events-list-section {
+    padding: 3rem 0;
+  }
+  
+  .events-list-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .events-list-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .events-list-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .events-list-content {
+    padding: 1.5rem;
+  }
+  
+  .events-list-card-title {
+    color: #743a07;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .events-list-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 23px;
+  }
+  
+  .events-list-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 19px;
+  }
+  
+  .events-list-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .events-list-icon {
+    color: #743a07;
+    min-width: 20px;
+  }
+  
+  /* Tablette */
+  @media (min-width: 768px) {
+    .events-list-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .events-list-title {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .events-list-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .events-list-title {
+      font-size: 3.5rem;
+    }
+  
+    .events-list-card {
+      transition: transform 0.3s ease;
+    }
+  
+    .events-list-card:hover {
+      transform: translateY(-5px);
+    }
+  }

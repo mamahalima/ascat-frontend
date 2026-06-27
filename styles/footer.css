@@ -1,0 +1,256 @@
+.footer {
+  background: #ddcfc4;
+  padding: 30px 20px 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer-column h3 {
+  font-size: 25px;
+  color: #743a07;
+  margin: 0;
+}
+
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #743a07;
+  margin: 6px auto 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-info a:hover {
+  color: orange;
+}
+
+.footer-contacte {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 280px;
+  color: black;
+  margin: 0;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.footer-icon {
+  color: #743a07;
+  font-size: 18px;
+  min-width: 20px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  
+}
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius:50%;
+  transition: 0.3s;
+  font-size:24px;
+}
+.paypal{
+  color: #1e293b;
+ 
+}
+.youtube{
+  color:white;
+ background-color: red;
+}
+.face{
+  color:blue;
+}
+.insta{
+ color:white;
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+}
+.fax{
+  background:black;
+  color:white;
+}
+.footer-socials a:hover {
+  background: orange;
+  color: #0f172a;
+}
+
+.footer-info-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 180px;
+}
+
+.footer-info-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+  position: relative;
+  padding-left: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.footer-info-nav a::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: black;
+}
+
+.footer-info-nav a:hover {
+  color:orange;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 20px 0;
+  border-top: 1px solid #1e293b;
+  font-size: 13px;
+  color: white;
+  background-color: #401f02;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  flex-direction: column;
+}
+.footer-bottom a{
+  text-decoration: none;
+  color:white; 
+}
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    width: calc(50% - 1rem);
+    align-items: flex-start;
+  }
+
+  .footer-column h3::after {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer-info,
+  .footer-info-nav {
+    align-items: flex-start;
+  }
+.footer-info-nav p{
+  font-size: 23px;
+}
+.footer-info-nav a{
+  font-size: 23px;
+
+}
+  .footer-contacte {
+    justify-content: flex-start;  
+  }
+  .footer-info p{
+    font-size: 23px;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+  .footer-bottom {
+    flex-direction: row;
+   justify-content:center;
+   gap: 10px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .footer-container {
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex: 1;
+    max-width: 250px;
+  }
+  .footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #f1f5f9;
+    transition: 0.3s;
+  }
+}

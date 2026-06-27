@@ -1,0 +1,270 @@
+.kst-cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 18px 21px;
+    background: linear-gradient(
+      135deg,
+      #743a07,
+      #a85b15
+    );
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px
+      rgba(116, 58, 7, 0.25);
+    transition: all 0.3s ease;
+  }
+  .kst-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px
+      rgba(116, 58, 7, 0.35);
+  }
+  .kst-cta-icon {
+    transition: transform 0.3s ease;
+  }
+  .kst-cta-button:hover .kst-cta-icon {
+    transform: translateX(5px);
+  }
+.kst-page {
+    padding: 3rem 0;
+  }
+  
+  .kst-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .kst-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .kst-subtitle {
+    color: #743a07;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:24px;
+  }
+  
+  .kst-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+  }
+  
+  .kst-description {
+    color: #475569;
+    line-height: 1.8;
+    font-size:24px;
+  }
+  
+  .kst-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .kst-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 24px;
+  }
+  
+  .kst-button-primary,
+  .kst-button-secondary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .kst-button-primary {
+    background: #743a07;
+    color: white;
+  }
+  
+  .kst-button-primary:hover {
+    transform: translateY(-3px);
+  }
+  
+  .kst-button-secondary {
+    border: 2px solid #743a07;
+    color: #743a07;
+  }
+  
+  .kst-progress {
+    margin-top: 5rem;
+  }
+  
+  .kst-progress-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 24px;
+  }
+  
+  .kst-progress-bar {
+    height: 30px;
+    background: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  
+  .kst-progress-fill {
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      #743a07,
+      #b45309
+    );
+    transition: width 1s ease;
+  }
+  
+  .kst-progress-text {
+    text-align: center;
+    color: #475569;
+    font-size:24px;
+  }
+  
+  .kst-cta {
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .kst-cta h2 {
+    color: #1e293b;
+  }
+  
+  .kst-cta p {
+    color: #475569;
+    font-size: 24px;
+  }
+  .kst-spaces {
+    padding: 4rem 0;
+  }
+  
+  .kst-spaces-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .kst-spaces-label {
+    color: #b8860b;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .kst-spaces-title {
+    color:white;
+    background-color: #743a07;
+    border-radius:50%;
+    max-width:400px;
+    margin:0 auto;
+    margin-bottom: 1rem;
+    padding:30px;
+  }
+  
+  .kst-spaces-description {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 24px;
+  }
+  
+  .kst-spaces-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .kst-space-card {
+    overflow: hidden;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: transform .3s ease;
+  }
+  
+  .kst-space-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .kst-space-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .kst-space-card h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #743a07;
+  }
+  .kst-button-description{
+    text-align: center;
+   font-size: 24px;
+   padding:0 12px;;
+  }
+  
+  @media (min-width: 768px) {
+    .kst-hero {
+      flex-direction: row;
+    }
+  
+    .kst-reverse {
+      flex-direction: row-reverse;
+    }
+  
+  
+  .kst-content,
+  .kst-image-container {
+    flex: 1;
+  }
+  
+  .kst-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+    .kst-content,
+    .kst-image-container {
+      flex: 1;
+    }
+  
+    .kst-title {
+      font-size: 3.5rem;
+    }
+
+    .kst-spaces-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .kst-space-card {
+      flex: 1 1 calc(50% - 1rem);
+    }
+    .kst-cta-button{
+      max-width:300px;
+    }
+  }
+  
+  

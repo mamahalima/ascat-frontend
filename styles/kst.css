@@ -1,0 +1,105 @@
+.project-kst {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fffbf7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }  
+  .project-kst-image {
+    width: 100%;
+    height:auto;
+    display: block;
+    object-fit: cover;
+  }
+  .project-kst-content {
+    padding: 2rem;
+  }
+  .project-kst-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #9c6b3d;
+  }
+  .project-kst-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+.project-kst-description {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color: #555;
+    font-size: 20px;
+  }
+  
+  .project-features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .project-kst-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #666;
+    font-size:17px;
+  }
+  .project-icon{
+    color: #743a07;
+    font-size: 17px;
+  }
+  .project-kst-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background-color:#6e3307de;
+  }
+  @media (min-width: 768px) {
+    .project-kst {
+      margin: 3rem 2rem;
+    }
+  
+    .project-features-container {
+      gap: 1.5rem;
+    }
+    .project-kst-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    }
+  }
+  @media (min-width: 1024px) {
+    .project-kst {
+      flex-direction: row;
+    }
+    .project-kst-image-container,
+    .project-kst-content {
+      width: 50%;
+    }
+  
+    .project-kst-image {
+        width: 100%;
+        height:auto;
+        object-fit: cover;
+        display: block;
+        }
+    .project-kst-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+      .project-kst-description {
+        font-size:23px;
+      }
+  }

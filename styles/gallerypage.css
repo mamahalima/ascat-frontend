@@ -1,0 +1,141 @@
+
+.gallery-page-hero {
+  background: #6e3307de;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.gallery-page-hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.gallery-page-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: white;
+  font-size:24px;
+}
+.gallery-program {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.gallery-program-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.gallery-program-title {
+  color: #743a07;
+  font-size: 2rem;
+}
+
+.gallery-program-description {
+  line-height: 1.7;
+  color: #444;
+  font-size:24px;
+}
+
+/* =========================
+   FLEX GALLERY GRID
+========================= */
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* CARD FLEX */
+.gallery-card {
+  flex: 1 1 calc(100% - 1rem);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+/* IMAGE */
+.gallery-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* hover */
+.gallery-card:hover .gallery-image {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+/* =========================
+   DRIVE BUTTON
+========================= */
+
+.gallery-drive-container {
+  text-align: center;
+}
+
+.gallery-drive-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #743a07;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-drive-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+
+  .gallery-page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .gallery-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .gallery-image {
+    height: 260px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+  .gallery-card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+
+  .gallery-image {
+    height:600px;
+  }
+
+  .gallery-program-title {
+    font-size: 2rem;
+  }
+}

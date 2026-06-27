@@ -1,0 +1,101 @@
+.support-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #6e3307de;
+}
+  
+  .support-image {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .support-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color:white;
+  }
+  
+  .support-title {
+    font-size: 2rem;
+  }
+  
+  .support-description {
+    line-height: 1.6;
+    color: white;
+    font-size:24px;
+  }
+  
+  .support-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .support-feature {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 0.75rem;
+  }
+  .support-buttons{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+}
+  
+  .support-button-primary{
+    color: white;
+    background:#4b2202de;
+    width: fit-content;
+    text-decoration: none;  
+    padding: 0.875rem 1.5rem;
+    border-radius:5px;
+
+  }
+  .support-button-secondary{
+    color: #8b5703;
+    background:white;
+    width: fit-content;
+    text-decoration: none;
+    padding: 0.875rem 1.5rem;
+    border-radius:5px;
+  }
+  @media (min-width: 768px) {
+    .support-actions {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+    }
+    .support-buttons{
+      display: flex;
+      flex-direction:row;
+      gap:1.5rem;
+  }
+    .support-image-container,
+    .support-content {
+      flex: 1;
+    }
+    .support-image {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 1024px) {
+    .support-image {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      object-fit: cover;
+    }
+    .support-actions{
+      padding: 2rem 2rem;
+    }
+  }

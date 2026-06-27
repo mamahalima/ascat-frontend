@@ -1,0 +1,144 @@
+.about-hero {
+    background:#743a07;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .about-label {
+    display: inline-block;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .about-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: white;
+    font-size: 21px;
+  }
+  
+  .about-section {
+    padding: 4rem 0;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .about-text h2 {
+    color: #743a07;
+    font-size:24px;
+  }
+  
+  .about-text p {
+    line-height: 1.8;
+    color: #444;
+    font-size:24px;
+  }
+  
+  .about-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: fit-content;
+    padding: 0.9rem 1.5rem;
+    background: #743a07;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .about-c-boutton-container{
+    display: flex;
+    justify-content: center;
+    padding-top:1.7rem;
+  }
+  .about-button:hover {
+    opacity: 0.9;
+    color:orange;
+  }
+  
+  .about-image {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    height:300px;
+  }
+  
+  .about-values {
+    padding: 4rem 0;
+    background: #f8f8f8;
+  }
+  
+  .about-values-title {
+    text-align: center;
+    color: #743a07;
+    margin-bottom: 2rem;
+  }
+  
+  .about-values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .about-value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .about-value-card h3 {
+    color: #743a07;
+    margin-bottom: 1rem;
+  }
+  
+  .about-value-card p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Tablette */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .about-text,
+    .about-image-container {
+      flex: 1;
+    }
+  
+    .about-values-grid {
+      flex-direction: row;
+    }
+    .about-reverse {
+      flex-direction: row-reverse;
+    }
+    .about-image {
+      width: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      height:450px;
+    }
+  }

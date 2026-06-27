@@ -1,0 +1,126 @@
+/* =========================
+   MOBILE FIRST
+========================= */
+
+.hero {
+    min-height: 45vh;
+    background-image: url("https://res.cloudinary.com/dfmms7dyj/image/upload/v1782229678/IMG_0270_486036ecff.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px 120px;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-subtitle {
+    display: block;
+    margin-bottom: 15px;
+    color: #ca5f08;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 1.2;
+    color:rgb(194, 98, 7);
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero-buttons button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .hero-buttons button:first-child {
+    background: #8b5703;
+    color: white;
+  }
+  
+  .hero-buttons button:nth-child(2),
+  .hero-buttons button:nth-child(3) {
+    background: white;
+    border: 1px solid #b8860b;
+    color: #b8860b;
+  }
+  
+  /* =========================
+     TABLETTE
+  ========================= */
+  
+  @media (min-width: 768px) {
+    .hero {
+      min-height: 60vh;
+      padding: 60px 40px;
+      background-size:cover;
+    }
+  
+    .hero-content {
+      max-width: 600px;
+    }
+  
+    .hero-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .hero h1 {
+      font-size: 3.2rem;
+    }
+  
+    .hero p {
+      font-size: 1.05rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: none;
+    }
+  
+    .hero-buttons button {
+      width: auto;
+      padding: 12px 20px;
+    }
+  }
+  
+  /* =========================
+     DESKTOP
+  ========================= */
+  
+  @media (min-width: 1024px) {
+    .hero {
+      min-height: 75vh;
+      padding: 50px;
+      background-size:cover;
+    }
+  
+    .hero-content {
+      max-width: 700px;
+    }
+  
+    .hero h1 {
+      font-size: 4.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 550px;
+    }
+    .hero-buttons{
+      display: flex;
+    }
+  }

@@ -1,0 +1,61 @@
+.activities {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f9f7f4;
+  }
+  
+.activities h2 {
+  text-align: center;
+  width: 100%;
+  font-size:1.7rem;
+}
+  .activity-card {
+    background: white;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .activity-icon {
+    font-size: 2rem;
+    color: #743a07;
+    margin-bottom: 12px;
+  }
+  .activity-card h3 {
+    font-size:1rem;
+    color: #3b2a1a;
+    line-height: 1.4;
+  }
+  @media (min-width: 768px) {
+    .activities {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 40px 30px;
+    }
+    .activity-card {
+      flex: 1 1 calc(50% - 10px);
+    }
+  }  
+  @media (min-width:1024px) {
+    .activities {
+      justify-content: center;
+      padding:  40px 40px;
+      position: relative;
+      z-index: 10;
+      margin-top: -90px;
+    }
+    .activity-card {
+      flex: 0 1 15%;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .activity-card h3 {
+      font-size:1.3rem;
+      color: #3b2a1a;
+      line-height: 1.4;
+    }
+  }
