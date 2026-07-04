@@ -14,7 +14,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6"
 
 import { getFooter } from "../services/strapifooter";
-import { FaX } from "react-icons/fa6";
+
 
 export default async function Footer() {
   const footer = await getFooter();

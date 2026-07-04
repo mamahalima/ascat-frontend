@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:1337";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getProjectKST() {
   const res = await fetch(
