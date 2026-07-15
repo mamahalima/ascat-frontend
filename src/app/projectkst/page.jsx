@@ -15,11 +15,9 @@ export default async function ProjectKSTPage() {
         </main>
       );
     }
-  
     return (
       <main className="kst-page">
         {projects.map((project, index) => {
-          // sécurité nombres
           const current = Number(
             project?.CurrentAmount ?? 0
           );
@@ -27,7 +25,6 @@ export default async function ProjectKSTPage() {
           const goal = Number(
             project?.GoalAmount ?? 0
           );
-  
           const percentage =
             goal > 0
               ? Math.min(
@@ -35,13 +32,9 @@ export default async function ProjectKSTPage() {
                   100
                 )
               : 0;
-  
-          // sécurité texte
           const description =
             project?.Description?.[0]?.children?.[0]
               ?.text ?? "";
-  
-          // sécurité image
           const coverUrl =
             project?.Cover?.[0]?.url;
   
@@ -69,7 +62,7 @@ export default async function ProjectKSTPage() {
                 {index === 0 && (
                   <div className="kst-buttons">
                     <Link
-                      href="https://www.paypal.me/Toubanice"
+                      href="/donation"
                       className="kst-button-primary"
                     >
                       <FaDonate />
@@ -184,7 +177,7 @@ export default async function ProjectKSTPage() {
             présentes et futures.
           </p>
            <Link
-               href="https://www.paypal.me/Toubanice"
+               href="/donation"
                className="kst-cta-button"
            >
                <span>Contribuer maintenant</span>

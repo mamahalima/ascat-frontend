@@ -17,7 +17,7 @@ export default function Navbar() {
           />
 
           <div className="logo-text">
-            <h1>ASCAT</h1>
+            <h1>LADAL MANAAZILI</h1>
             <p>Association sociale et culturelle des amis de Touba</p>
           </div>
         </Link>

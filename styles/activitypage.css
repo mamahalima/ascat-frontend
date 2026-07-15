@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size:20px;
+  font-size:15px;
 }
 
 .activity-page-image-wrapper {
@@ -62,7 +62,7 @@
 }
 
 .activity-page-title {
-  font-size: 24px;
+  font-size: 20px;
   color: #743a07;
   padding-bottom: 5px;
 }
@@ -123,7 +123,6 @@
     font-size: 35px;
   }
 
-  /* IMAGE */
   .activity-page-image-wrapper {
     flex: 1;
   }
@@ -134,16 +133,13 @@
     border-radius: 24px;
   }
 
-  /* LAYOUT DESKTOP */
   .activity-page-content,
   .activity-page-content-reverse {
     display: flex;
-    flex-direction: column; /* tu veux garder column */
+    flex-direction: column; 
     align-items: center;
     gap: 2rem;
   }
-
-  /* TEXT ALIGNEMENT desktop */
   .activity-page-text {
     display: flex;
     flex-direction: column;
@@ -151,7 +147,10 @@
     text-align: center;
   }
   .activity-page-text{
-    font-size:24px;
+    font-size:17px;
+  }
+  .activity-page-title{
+    font-size: 24px;
   }
 }
   @media (min-width: 1024px){
@@ -165,6 +164,9 @@
     .activity-page-image-wrapper {
       width: 100%;
     }
-    
+  
+    .activity-page-text{
+      font-size:20px;
+    }
 
 }

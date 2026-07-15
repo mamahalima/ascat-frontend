@@ -23,7 +23,7 @@ export default async function UpcomingEvents() {
   <h2 className="upcoming-events-title">
     Prochains événements
   </h2>
-  <Link
+      <Link
         href="/events"
         className="upcoming-events-link"
       >
@@ -52,26 +52,25 @@ export default async function UpcomingEvents() {
               {month}
             </span>
           </div>
-
           <div className="event-content">
-  <h3 className="event-title">
-    {event.title}
-  </h3>
-  <p className="event-location">
-    <FaTag className="event-icon" />
-    Thème :{" "}
-    {event.description?.[0]?.children?.[0]?.text}
-  </p>
-  <p className="event-location">
-    <FaMapMarkerAlt className="event-icon" />
-    {event.localisation}
-  </p>
+              <h3 className="event-title">
+                  {event.title}
+              </h3>
+               <p className="event-location">
+                <FaTag className="event-icon" />
+                 Thème :{" "}
+                 {event.description?.[0]?.children?.[0]?.text}
+               </p>
+               <p className="event-location">
+                <FaMapMarkerAlt className="event-icon" />
+                 {event.localisation}
+               </p>
 
-  <p className="event-time">
-    <FaClock className="event-icon" />
-    {event.time}
-  </p>
-</div>
+               <p className="event-time">
+               <FaClock className="event-icon" />
+                 {event.time}
+               </p>
+          </div>
         </div>
       );
     })}

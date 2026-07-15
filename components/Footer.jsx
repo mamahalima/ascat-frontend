@@ -25,24 +25,6 @@ export default async function Footer() {
  <footer className="footer"id= "contact">
     <div className="footer-container">
         <div className="footer-column">
-        <h3>A propos de ASCAT</h3>
-         <div className="footer-info">
-           <p>
-            L'association de l'ASCAT oeuvre pour l'entre aide,l'education.
-            </p>
-          {footer.Logo?.length > 0 && (
-            <img
-              src={footer.Logo[0].url}
-              alt={footer.Title}
-              className="footer-logo"
-            />
-          )}
-           <Link href="/about">
-            A savoir plus <FaArrowRight/>
-          </Link>
-         </div>
-        </div>
-        <div className="footer-column">
         <h3>{footer.Title}</h3>
         <div className="footer-info">
           <p className="footer-contacte">
@@ -79,7 +61,6 @@ export default async function Footer() {
             >
               <FaXTwitter className="fax"/>
             </a>
-
             <a
               href="https://www.youtube.com/@toubanice"
               target="_blank"
@@ -97,9 +78,10 @@ export default async function Footer() {
         </div>
         <div className="footer-column">
           <h3>Navigation</h3>
+          <div className="footer-info">
           <div className="footer-info-nav">
           <Link href="/activity">
-           activités
+           Activités
           </Link>
           <Link href="/events">
             Événements
@@ -110,12 +92,19 @@ export default async function Footer() {
           <Link href="/gallery">
             Galerie
           </Link>
+          <Link href="/projectkst">
+           Projet KST
+          </Link>
           <Link href="/contact">
             Contact
           </Link>
           <Link href="/member">
-            adhérer
+            Adhérer
           </Link>
+          <Link href="/donation">
+            Faire un don
+          </Link>
+          </div>
          </div>
         </div>
       <div className="footer-column">
@@ -131,7 +120,7 @@ export default async function Footer() {
             </p>
             <p className="footer-contacte">
               <FaMoneyCheckAlt className="footer-icon" />
-              <span>Chèque : à l’ordre d’ASCAT</span>
+              <span>Chèque : À l’ordre d’ASCAT</span>
             </p>
           </div>
        </div>

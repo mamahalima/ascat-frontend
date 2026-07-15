@@ -43,7 +43,7 @@ export default function AdhererPage() {
       <section className="membership-hero">
         <div className="page-container">
           <h1 className="membership-title">
-            Adhérer à l'ASCAT
+            Adhérer à LADAL MANAAZILI
           </h1>
 
           <p className="membership-subtitle">

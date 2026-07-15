@@ -22,11 +22,11 @@ export default async function AboutPage() {
           </span>
 
           <h1 className="about-title">
-            À propos de l'ASCAT
+            À propos de LADAL MANAAZILI
           </h1>
 
           <p className="about-subtitle">
-            L'Association Socio-Culturelle ASCAT œuvre
+            L'Association LADAL MANAAZILI œuvre
             pour renforcer les liens de solidarité,
             promouvoir la culture et accompagner les
             initiatives éducatives au sein de la

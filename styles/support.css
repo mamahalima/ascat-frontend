@@ -21,13 +21,13 @@
   }
   
   .support-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   .support-description {
     line-height: 1.6;
     color: white;
-    font-size:24px;
+    font-size: 15px;
   }
   
   .support-features {
@@ -96,6 +96,9 @@
       object-fit: cover;
     }
     .support-actions{
-      padding: 2rem 2rem;
+      padding: 2em 2rem;
+    }
+    .support-description {
+      font-size:16px;
     }
   }

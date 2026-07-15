@@ -67,11 +67,11 @@ export default async function ArticlePage({ params }) {
           )}
           </div>
         <div className="article-social">
-         <h3>Suivez l'ASCAT</h3>
+         <h3>Suivez LADAL MANAAZILI</h3>
 
          <div className="social-links">
            <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/toubanice"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon facebook"
@@ -80,7 +80,7 @@ export default async function ArticlePage({ params }) {
            </a>
 
            <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/toubanice"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon instagram"
@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }) {
           </a>
 
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@toubanice"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon youtube"
@@ -98,7 +98,7 @@ export default async function ArticlePage({ params }) {
           </a>
 
           <a
-           href="https://X.com"
+           href="https://www.x.com/toubanice"
            target="_blank"
            rel="noopener noreferrer"
            className="social-icon twitter"

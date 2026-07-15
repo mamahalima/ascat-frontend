@@ -15,18 +15,19 @@
 
 .actualities-title {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #222;
 }
 
 .actualities-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   text-decoration: none;
   font-weight: 600;
   color: #743a07;
   transition: all 0.3s ease;
+  font-size:0.5rem;
 }
 
 .actualities-link:hover {
@@ -75,7 +76,7 @@
   color: #743a07;
   border-radius: 6px;
   padding: 5px 10px;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -83,22 +84,21 @@
 .actuality-date {
   color:black;
   font-weight:600;
-  font-size: 0.85rem;
+  font-size: 0.6rem;
 }
 .actuality-content h3 {
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   line-height: 1.4;
   color: #222;
 }
 .actuality-description {
   color: #555;
   line-height: 1.7;
-  font-size: 20px;
+  font-size: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -124,6 +124,18 @@
     flex-direction: column;
     justify-content: center;
   }
+  .actuality-subtitle{
+    font-size: 0.5rem;
+  }
+  .actualities-title {
+    margin: 0;
+    font-size:1.3rem;
+    color: #222;
+  }
+
+  .actuality-date{
+    font-size:O.7rem;
+  }
 }
 @media (min-width: 1024px) {
   .actualities {
@@ -131,10 +143,13 @@
   }
 
   .actuality-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .actuality-description {
-    font-size:24;
+    font-size:16px;
+  }
+  .actualities-link {
+    font-size:0.8rem;
   }
 }

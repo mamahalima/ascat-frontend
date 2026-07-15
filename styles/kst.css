@@ -26,13 +26,13 @@
   }
   .project-kst-title {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size:1rem;
   }
 .project-kst-description {
     margin-bottom: 2rem;
     line-height: 1.7;
     color: #555;
-    font-size: 20px;
+    font-size: 15px;
   }
   
   .project-features-container {
@@ -100,6 +100,6 @@
       justify-content: center;
     }
       .project-kst-description {
-        font-size:23px;
+        font-size:16px;
       }
   }

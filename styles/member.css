@@ -10,7 +10,7 @@
   
   .membership-title {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
@@ -19,7 +19,7 @@
     margin: auto;
     line-height: 1.7;
     color:white;
-    font-size:24px;
+    font-size:17px;
   }
   
   .membership-benefits {
@@ -150,7 +150,7 @@
   @media (min-width: 768px) {
   
     .membership-title {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
   
     .membership-benefits {
@@ -178,7 +178,7 @@
   @media (min-width: 1024px) {
 
     .membership-title {
-      font-size: 3rem;
+      font-size:1.7rem;
     }
     .membership-success {
       margin-bottom: 1rem;
@@ -197,5 +197,8 @@
     }
     .membership-card p{
       font-size:21px;
+    }
+    .membership-subtitle {
+      font-size:24px;
     }
   }

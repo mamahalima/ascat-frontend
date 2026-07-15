@@ -12,11 +12,12 @@ export default function Home() {
     <main>
       <Hero />
       <div className="page-container">
-        <Activities />
+        
       <section className="home-infos">
         <Actuality />
         <UpcomingEvents />
       </section>
+      <Activities />
         <ProjectKst />
         <Gallery />
       </div>

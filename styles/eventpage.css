@@ -24,7 +24,7 @@
     margin: 0 auto;
     color: white;
     line-height: 1.6;
-    font-size:24px;
+    font-size:17px;
   }
   
   .events-list-section {
@@ -57,21 +57,21 @@
   .events-list-card-title {
     color: #743a07;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .events-list-description {
     color: #555;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    font-size: 23px;
+    font-size:15px;
   }
   
   .events-list-details {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    font-size: 19px;
+    font-size: 15px;
   }
   
   .events-list-detail {
@@ -84,10 +84,9 @@
   
   .events-list-icon {
     color: #743a07;
-    min-width: 20px;
+    min-width: 10px;
   }
   
-  /* Tablette */
   @media (min-width: 768px) {
     .events-list-grid {
       display: grid;
@@ -97,9 +96,11 @@
     .events-list-title {
       font-size: 3rem;
     }
+    .events-list-subtitle {
+      font-size: 24px;
+    }
   }
   
-  /* Desktop */
   @media (min-width: 1024px) {
     .events-list-grid {
       grid-template-columns: repeat(3, 1fr);

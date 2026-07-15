@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  FaArrowRight,
   FaHandsHelping,
   FaBookOpen,
   FaMosque,
@@ -16,9 +15,7 @@ function renderBlocks(blocks) {
 
   return blocks
     .map((block) =>
-      block?.children
-        ?.map((child) => child.text || "")
-        .join("")
+      block?.children?.map((child) => child.text || "").join("")
     )
     .join(" ");
 }
@@ -29,19 +26,18 @@ export default async function ActivityPage() {
   if (!activities?.length) {
     return (
       <main className="activity-page-main">
-        Aucune activité disponible
+        <h2>Aucune activité disponible.</h2>
       </main>
     );
   }
 
-  const icons = [
-    <FaHandsHelping />,
-    <FaBookOpen />,
-    <FaMosque />,
-    <FaGlobeAfrica />,
-    <FaGraduationCap />,
-    <FaHandHoldingHeart />,
-  ];
+  const icons = {
+    "entraide-solidarite": <FaHandsHelping />,
+    "soutien-scolaire": <FaBookOpen />,
+    "patrimoine-culturel": <FaMosque />,
+    "echanges-interculturels": <FaGlobeAfrica />,
+    "orientation-educative": <FaGraduationCap />,
+  };
 
   return (
     <main className="activity-page-main">
@@ -52,26 +48,22 @@ export default async function ActivityPage() {
           </h1>
 
           <p className="activity-page-subtitle">
-            Découvrez les différentes actions
-            menées par l'ASCAT au service de la
-            communauté.
+            Découvrez les différentes actions menées par LADAL MANAAZILI
+            au service de la communauté.
           </p>
         </div>
       </section>
 
       {activities.map((item, index) => {
         const title = item?.Title || "";
-        const description = renderBlocks(
-          item?.Description
-        );
-
-        const coverUrl =
-          item?.Cover?.[0]?.url || "";
+        const description = renderBlocks(item?.Description);
+        const slug = item?.Slug || "";
+        const coverUrl = item?.Cover?.[0]?.url || "";
 
         return (
           <section
             key={item.id}
-            id={item?.Slug}
+            id={slug}
             className="activity-page-section"
           >
             <div className="page-container">
@@ -84,11 +76,7 @@ export default async function ActivityPage() {
               >
                 <div className="activity-page-text">
                   <div className="activity-page-icon">
-                    {
-                      icons[
-                        index % icons.length
-                      ]
-                    }
+                    {icons[slug] || <FaHandsHelping />}
                   </div>
 
                   <h2 className="activity-page-title">
@@ -99,6 +87,7 @@ export default async function ActivityPage() {
                     {description}
                   </p>
                 </div>
+
                 {coverUrl && (
                   <div className="activity-page-image-wrapper">
                     <img
@@ -113,7 +102,8 @@ export default async function ActivityPage() {
           </section>
         );
       })}
-            <div className="activity-page-gallery-button-container">
+
+      <div className="activity-page-gallery-button-container">
         <Link
           href="/gallery"
           className="activity-page-gallery-button"

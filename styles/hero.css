@@ -1,10 +1,6 @@
-/* =========================
-   MOBILE FIRST
-========================= */
-
 .hero {
     min-height: 45vh;
-    background-image: url("https://res.cloudinary.com/dfmms7dyj/image/upload/v1782229678/IMG_0270_486036ecff.png");
+    background-image: url("https://res.cloudinary.com/dfmms7dyj/image/upload/v1784031764/kurelascat_97abe4813c.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +15,7 @@
   .hero-subtitle {
     display: block;
     margin-bottom: 15px;
-    color: #ca5f08;
+    color: white;
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -28,7 +24,7 @@
     margin-bottom: 20px;
     font-size: 2rem;
     line-height: 1.2;
-    color:rgb(194, 98, 7);
+    color:white
   }
   
   .hero-buttons {

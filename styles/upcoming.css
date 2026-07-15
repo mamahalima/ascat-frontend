@@ -4,25 +4,21 @@
     background: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-  
   .upcoming-events-title {
     margin-bottom: 1rem;
     text-align: center;
-    font-size:1.7rem;
+    font-size:1rem;
   }
-  
   .events-container {
     display: flex;
     flex-direction: column;
   }
-  
   .event-card {
     display: flex;
     flex-direction: row;
     border-bottom: 2 solid  rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
-  
   .event-image {
     display: flex;
     flex-direction: column;
@@ -34,14 +30,14 @@
   }
   
   .event-day {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #333;
     
   }
   
   .event-month {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #666;
@@ -50,12 +46,12 @@
   .event-content {
     flex: 1;
     padding: 1rem;
-    font-size: 21px;
+    font-size:12px;
   }
   
   .event-title {
     margin-bottom: 0.75rem;
-    font-size: 1.25rem;
+    font-size: 0.8rem;
   }
   
   .event-location,
@@ -65,7 +61,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size:21px;
+    font-size:12px;
   }
   .event-icon {
     color:#743a07;
@@ -86,9 +82,8 @@
     align-items: center;
     gap: 0.5rem;
     color:#743a07;
-
+    font-size:0.5rem;
   }
-
   @media (min-width: 768px) {
     .events-container {
       flex-direction: column;
@@ -97,22 +92,33 @@
     .event-card {
       width: 100%;
     }
+
   }
   .upcoming-events-header {
     flex-direction: row;
-
     justify-content: space-between;
-
     align-items: center;
   }
-
   @media (min-width: 1024px) {
     .events-container {
       max-width: 900px;
       margin: 0 auto;
     }
-  
     .event-card {
       width: 100%;
     }
+    .upcoming-events-link{
+    font-size: 0.8rem;
+    }
+    .upcoming-events-title{
+      font-size:1.3rem;
+    }
+    .event-location,
+  .event-time {
+    font-size:0.8rem;
+  }
+  .event-title{
+    font-size: 1.1rem;
+  }
+ 
   }

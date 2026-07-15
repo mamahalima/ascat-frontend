@@ -29,7 +29,7 @@ export default async function SupportActions() {
       </div>
       <div className="support-buttons">
        <a
-    href="https://www.paypal.me/Toubanice"
+    href="/donation"
     className="support-button-primary"
        >
     Faire un don

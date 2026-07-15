@@ -22,7 +22,6 @@ function renderBlocks(blocks) {
 export default async function ActualityPage() {
   const actualities = await getActualities();
 
-  // 🔴 SAFE SLUG NORMALIZATION (IMPORTANT)
   const normalized = actualities.map((item) => ({
     ...item,
     slug: item.slug || item.attributes?.slug,
@@ -38,8 +37,6 @@ export default async function ActualityPage() {
 
   return (
     <main className="actuality-page">
-
-      {/* HERO */}
       <section className="actuality-page-hero">
         <div className="page-container">
           <h1 className="actuality-page-heading">
@@ -55,7 +52,6 @@ export default async function ActualityPage() {
 
       <div className="page-container">
 
-        {/* FEATURED */}
         {featured && (
           <section className="featured-news">
 

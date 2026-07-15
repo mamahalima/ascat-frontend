@@ -17,6 +17,7 @@ import "../../styles/actualitypage.css";
 import "../../styles/member.css";
 import "../../styles/articlepage.css";
 import "../../styles/contact.css";
+import "../../styles/donationpage.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 

@@ -24,7 +24,7 @@ export default async function EventsPage() {
           <p className="events-list-subtitle">
             Découvrez les prochains rendez-vous,
             conférences, activités culturelles et
-            événements organisés par l'ASCAT.
+            événements organisés par LADAL MANAAZILI.
           </p>
         </div>
       </section>

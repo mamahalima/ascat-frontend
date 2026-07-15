@@ -1,4 +1,3 @@
-/* Mobile First */
 *,
 *::before,
 *::after {
@@ -56,7 +55,6 @@ body {
     display: none;
   }
   
-  /* Tablet */
   @media (min-width: 768px) {
     .navbar {
       padding: 16px 30px;
@@ -133,6 +131,12 @@ body {
     border: none;
     font-size: 2rem;
     cursor: pointer;
+    background: linear-gradient(
+      90deg,
+      #743a07,
+      #b45309
+  );
+  color:white;
   }
   
   .nav-links {

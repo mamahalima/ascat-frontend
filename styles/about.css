@@ -44,13 +44,13 @@
   
   .about-text h2 {
     color: #743a07;
-    font-size:24px;
+    font-size:20px;
   }
   
   .about-text p {
     line-height: 1.8;
     color: #444;
-    font-size:24px;
+    font-size:15px;
   }
   
   .about-button {
@@ -117,7 +117,6 @@
     line-height: 1.6;
   }
   
-  /* Tablette */
   @media (min-width: 768px) {
     .about-content {
       flex-direction: row;
@@ -140,5 +139,8 @@
       border-radius: 1rem;
       object-fit: cover;
       height:450px;
+    }
+    .about-text p{
+      font-size:17px;
     }
   }
