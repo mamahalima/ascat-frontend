@@ -2,7 +2,10 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getFooter() {
   const res = await fetch(
-    `${API_URL}/api/footers?populate=*`
+    `${API_URL}/api/footers?populate=*`,
+    {
+    cache: "no-store",
+    }
   );
 
   if (!res.ok) {
