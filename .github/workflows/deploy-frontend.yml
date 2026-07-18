@@ -1,0 +1,28 @@
+name: Deploy Frontend to OVH
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.OVH_HOST }}
+          username: ${{ secrets.OVH_USER }}
+          key: ${{ secrets.OVH_SSH_KEY }}
+          script: |
+            cd /var/www/ascat-frontend
+
+            git pull origin main
+
+            npm install
+
+            npm run build
+
+            pm2 restart ascat-frontend
