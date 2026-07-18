@@ -33,7 +33,7 @@ const moyensPaiement = [
     color: "#1E40AF",
     type: "banque",
     banque: "Societe generale",
-    titulaire: "ASCAT",
+    titulaire: "LADAL MANAAZILI",
     iban: " FR76 3000 3015 0000 0372 6151 454",
     bic: "SOGEFRPP",
   },

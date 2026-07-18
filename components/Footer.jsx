@@ -120,7 +120,7 @@ export default async function Footer() {
             </p>
             <p className="footer-contacte">
               <FaMoneyCheckAlt className="footer-icon" />
-              <span>Chèque : À l’ordre d’ASCAT</span>
+              <span>Chèque : À l’ordre de LADAL MANAAZILI</span>
             </p>
           </div>
        </div>
