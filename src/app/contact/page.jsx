@@ -53,14 +53,14 @@ export default function ContactPage() {
 <div className="contact-card">
   <strong className="info">📍 Adresse</strong>
   <p>
-    1140 boulevard de l'Ariane,<br />
+    140 Boulevard de l'Ariane,<br />
     06300 NICE Bat 3 
   </p>
 </div>
 
 <div className="contact-card">
   <strong className="info">📞 Téléphone</strong>
-  <p>0033614368981</p>
+  <p>00 33 6 14 36 89 81</p>
 </div>
 
 <div className="contact-card">
