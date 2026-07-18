@@ -37,13 +37,13 @@ const moyensPaiement = [
     iban: " FR76 3000 3015 0000 0372 6151 454",
     bic: "SOGEFRPP",
   },
-  {
+  /* {
     nom: "Cagnotte en ligne",
     icon: <FaWallet />,
     color: "#22C55E",
     type: "lien",
     url: "https://www.helloasso.com/associations/ascat/formulaires/1",
-  },
+  }, */
 ];
 
 export default function DonationPage() {

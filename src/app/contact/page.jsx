@@ -54,7 +54,7 @@ export default function ContactPage() {
   <strong className="info">📍 Adresse</strong>
   <p>
     1140 boulevard de l'Ariane,<br />
-    06300 NICE Bat 3
+    06300 NICE Bat 3 
   </p>
 </div>
 
